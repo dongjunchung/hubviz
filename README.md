@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+# hubViz
+<!--
+hubViz: A Novel Tool for Hub-centric Visualization
+-->
 
-You can use the [editor on GitHub](https://github.com/dongjunchung/hubviz/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+hubViz (A novel tool for **Hub**-centric **Vis**ualization) is a novel tool for hub-centric visualization which is based on a latent space joint model (LSJM) for visualization.
+'hubviz' package provides computationally efficient and user friendly interface to fit the hubViz models. 
+[The 'hubviz' vignette](https://github.com/dongjunchung/GPA/blob/master/inst/doc/GPA-example.pdf?raw=true) provides a good start point for the step-by-step data analysis using 'hubviz' package.The following help pages provide a good start point for the genetic analysis using the 'hubviz' package, including the overview of 'hubviz' package and the example command lines:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+library(hubviz)
+package?hubviz
+class?hubviz
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Installation
+============ 
 
-### Jekyll Themes
+The stable versions of 'hubviz' package can be obtained from the following URLs:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dongjunchung/hubviz/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Package source: [https://github.com/dongjunchung/GPA_binary/blob/master/GPA_1.1-0.tar.gz?raw=true](https://github.com/dongjunchung/GPA_binary/blob/master/GPA_1.1-0.tar.gz?raw=true)
 
-### Support or Contact
+Windows binary: [https://github.com/dongjunchung/GPA_binary/blob/master/GPA_1.1-0.zip?raw=true](https://github.com/dongjunchung/GPA_binary/blob/master/GPA_1.1-0.zip?raw=true)
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Mac OS/X binary: [https://github.com/dongjunchung/GPA_binary/blob/master/GPA_1.1-0.tgz?raw=true](https://github.com/dongjunchung/GPA_binary/blob/master/GPA_1.1-0.tgz?raw=true)
+
+To install the developmental versions of 'palmer' package, it's easiest to use the 'devtools' package.
+
+```
+#install.packages("devtools")
+library(devtools)
+install_github("dongjunchung/hubviz")
+```
+
+References
+==========
