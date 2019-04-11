@@ -34,3 +34,5 @@ install_github("dongjunchung/hubviz")
 
 References
 ==========
+Jin IH, and Jeon M (2019), "GPA: A doubly latent space joint model for local item
+and person dependence in the analysis of item response data," *Psychometrika*, 84: 236-260.
