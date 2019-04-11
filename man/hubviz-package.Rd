@@ -23,6 +23,7 @@ LazyLoad: \tab yes\cr
 This package contains a main class, \code{hubviz}, which represents hubViz model fit.
 
 The main methods for the hubViz is \code{hubviz}, which fits a latent space joint model (LSJM).
+}
 
 \author{
 Jin Hyun Nam, Ick Hoon Jin
@@ -31,8 +32,7 @@ Maintainer: Dongjun Chung <chungd@musc.edu>
 }
 
 \references{
-Jin IH, and Jeon M (2019), "GPA: A doubly latent space joint model for local item
-and person dependence in the analysis of item response data," *Psychometrika*, 84: 236-260.
+Jin IH, Nam JH and Chung D (2019) ''hubViz: A novel tool for hub-centric visualization''.
 }
 
 \keyword{ package }
@@ -45,6 +45,7 @@ and person dependence in the analysis of item response data," *Psychometrika*, 8
 \examples{
 library(palmer)
 
+# Data generation
 n <- 100
 p <- 10
 bmat <- matrix( 0, n, p )

@@ -1,7 +1,7 @@
 
 \name{estimate}
 \alias{estimate}
-\alias{Estimate.hubviz}
+\alias{estimate.hubviz}
 \docType{methods}
 
 \title{hubviz result}

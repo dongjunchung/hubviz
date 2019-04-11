@@ -63,8 +63,7 @@ Construct \code{hubviz} class object.
 }
 
 \references{
-Jin IH, and Jeon M (2019), "GPA: A doubly latent space joint model for local item
-and person dependence in the analysis of item response data," *Psychometrika*, 84: 236-260.
+Jin IH, Nam JH and Chung D (2019) ''hubViz: A novel tool for hub-centric visualization''.
 }
 
 \author{ Jin Hyun Nam, Ick Hoon Jin }
@@ -72,7 +71,6 @@ and person dependence in the analysis of item response data," *Psychometrika*, 8
 
 \examples{
 # Data generation
-
 n <- 100
 p <- 10
 bmat <- matrix( 0, n, p )
