@@ -1,9 +1,5 @@
 
-#' An S4 class to represent hubviz model fitting results.
-#'
-#' @slot data data
-#' @slot init initial value
-#' @slot result result
+# bin-level data
 
 setClass( Class="hubviz",
     representation=representation(

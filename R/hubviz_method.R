@@ -1,16 +1,5 @@
 
-#' @import ggplot2 ggrepel
-#' @exportMethod estimate plot
-
-
-
-#' @title Summary of hubviz results
-#' 
-#' @description Summary of hubviz results
-#' 
-#' @aliases show.hubviz
-#' 
-#' @param object Output of hubviz function
+# generic methods for "hubviz" class
 
 setMethod(
   f="show",
@@ -40,16 +29,6 @@ setMethod(
 
 
  
-
-#' @title Return hubviz result
-#'
-#' @description Return estimates and MCMC results
-#'
-#' @aliases Estimate.hubviz
-#'
-#' @param object Output of hubviz function
-
-
 setGeneric(name="estimate",
            def=function(object)
            {
@@ -80,20 +59,6 @@ setMethod(
   }
 )
 
-
-
-
-
-
-#' @title Plotting function
-#' 
-#' @description Hub-centric visualization
-#'
-#' @aliases plot.hubviz
-#'
-#' @param x Output of hubviz function
-#' @param xlim X coordinate vector, (min,max)
-#' @param ylim Y coordinate vector, (min,max)
 
 setMethod(
   f="plot",
