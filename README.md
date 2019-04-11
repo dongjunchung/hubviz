@@ -24,7 +24,7 @@ Windows binary: [https://github.com/dongjunchung/GPA_binary/blob/master/GPA_1.1-
 
 Mac OS/X binary: [https://github.com/dongjunchung/GPA_binary/blob/master/GPA_1.1-0.tgz?raw=true](https://github.com/dongjunchung/GPA_binary/blob/master/GPA_1.1-0.tgz?raw=true)
 
-To install the developmental versions of 'palmer' package, it's easiest to use the 'devtools' package.
+To install the developmental versions of 'hubviz' package, it's easiest to use the 'devtools' package. Note that the ‘GPA’ package depends on the ‘Rcpp’ package, which also requires appropriate setting of Rtools and Xcode for Windows and Mac OS/X, respectively.
 
 ```
 #install.packages("devtools")
