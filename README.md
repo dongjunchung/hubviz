@@ -20,7 +20,7 @@ The stable versions of 'hubviz' package can be obtained from the following URLs:
 
 Package source: [https://github.com/dongjunchung/chunglab_binary_packages/blob/master/hubviz_0.1.tar.gz](https://github.com/dongjunchung/chunglab_binary_packages/blob/master/hubviz_0.1.tar.gz?raw=true)
 
-Windows binary: [https://github.com/dongjunchung/chunglab_binary_packages/blob/master/hubviz_0.1.zip](https://github.com/dongjunchung/chunglab_binary_packages/blob/master/hubviz_0.1.zip)
+Windows binary: [https://github.com/dongjunchung/chunglab_binary_packages/blob/master/hubviz_0.1.zip](https://github.com/dongjunchung/chunglab_binary_packages/blob/master/hubviz_0.1.zip?raw=true)
 
 Mac OS/X binary: [comming soon](https://)
 
