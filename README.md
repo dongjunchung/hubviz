@@ -18,11 +18,11 @@ Installation
 
 The stable versions of 'hubviz' package can be obtained from the following URLs:
 
-Package source: [https://github.com/dongjunchung/GPA_binary/blob/master/GPA_1.1-0.tar.gz?raw=true](https://github.com/dongjunchung/GPA_binary/blob/master/GPA_1.1-0.tar.gz?raw=true)
+Package source: [https://github.com/dongjunchung/chunglab_binary_packages/blob/master/hubviz_0.1.tar.gz](https://github.com/dongjunchung/chunglab_binary_packages/blob/master/hubviz_0.1.tar.gz)
 
-Windows binary: [https://github.com/dongjunchung/GPA_binary/blob/master/GPA_1.1-0.zip?raw=true](https://github.com/dongjunchung/GPA_binary/blob/master/GPA_1.1-0.zip?raw=true)
+Windows binary: [https://github.com/dongjunchung/chunglab_binary_packages/blob/master/hubviz_0.1.zip](https://github.com/dongjunchung/chunglab_binary_packages/blob/master/hubviz_0.1.zip)
 
-Mac OS/X binary: [https://github.com/dongjunchung/GPA_binary/blob/master/GPA_1.1-0.tgz?raw=true](https://github.com/dongjunchung/GPA_binary/blob/master/GPA_1.1-0.tgz?raw=true)
+Mac OS/X binary: [comming soon](https://)
 
 To install the developmental versions of 'hubviz' package, it's easiest to use the 'devtools' package. Note that the ‘hubviz’ package depends on the ‘Rcpp’ package, which also requires appropriate setting of Rtools and Xcode for Windows and Mac OS/X, respectively.
 
