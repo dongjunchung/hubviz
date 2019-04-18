@@ -5,7 +5,7 @@ hubViz: A Novel Tool for Hub-centric Visualization
 
 hubViz (a novel tool for **hub**-centric **Vis**ualization) is a novel tool for hub-centric visualization which is based on a latent space joint model (LSJM) for visualization.
 'hubviz' package provides computationally efficient and user friendly interface to fit the hubViz models. 
-[The 'hubviz' vignette](https://github.com/dongjunchung/GPA/blob/master/inst/doc/GPA-example.pdf?raw=true) provides a good start point for the step-by-step data analysis using 'hubviz' package.The following help pages provide a good start point for the genetic analysis using the 'hubviz' package, including the overview of 'hubviz' package and the example command lines:
+The following help pages provide a good start point for the genetic analysis using the 'hubviz' package, including the overview of 'hubviz' package and the example command lines:
 
 ```
 library(hubviz)
