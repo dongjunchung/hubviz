@@ -18,7 +18,7 @@ Installation
 
 The stable versions of 'hubviz' package can be obtained from the following URLs:
 
-Package source: [https://github.com/dongjunchung/chunglab_binary_packages/blob/master/hubviz_0.1.tar.gz](https://github.com/dongjunchung/chunglab_binary_packages/blob/master/hubviz_0.1.tar.gz)
+Package source: [https://github.com/dongjunchung/chunglab_binary_packages/blob/master/hubviz_0.1.tar.gz?raw=true](https://github.com/dongjunchung/chunglab_binary_packages/blob/master/hubviz_0.1.tar.gz)
 
 Windows binary: [https://github.com/dongjunchung/chunglab_binary_packages/blob/master/hubviz_0.1.zip](https://github.com/dongjunchung/chunglab_binary_packages/blob/master/hubviz_0.1.zip)
 
