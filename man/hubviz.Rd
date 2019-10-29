@@ -63,7 +63,7 @@ Construct \code{hubviz} class object.
 }
 
 \references{
-Jin IH, Nam JH and Chung D (2019) ''hubViz: A novel tool for hub-centric visualization''.
+Nam Jh, Yun J, Jin IH and Chung D (2019) ''hubViz: A novel tool for hub-centric visualization''.
 }
 
 \author{ Jin Hyun Nam, Ick Hoon Jin }
