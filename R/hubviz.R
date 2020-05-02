@@ -3,7 +3,7 @@
 
 hubviz <- function(dataset, nsample=nrow(dataset), nitem=ncol(dataset), ndim = 2, niter = 30000, nburn = 5000, nthin = 5, nprint = 100,
                     jump_theta = 1.0, jump_w = 0.2, pr_mean_theta = 0.0, pr_sd_theta = 10.0, pr_mean_w = 0.0, 
-                    prior_a = 0.001, prior_b = 0.001, option = FALSE, verbose=FALSE, cores = 1){
+                    prior_a = 0.001, prior_b = 0.001, w.ci=0.5, option = FALSE, verbose=TRUE, cores = 1){
 
   message("\n")
   message("---------------------\n")
@@ -37,11 +37,19 @@ hubviz <- function(dataset, nsample=nrow(dataset), nitem=ncol(dataset), ndim = 2
     }
     sigma.w = mean(output$sigma_w)
     
-    result = list(theta=output$theta, w=w.proc, 
-                           theta.estimate=theta.est, w.estimate=w.est, 
+    w.hpd = array(NA, dim=c(2,nitem,ndim))
+    for(i in 1:nitem){
+      for(j in 1:ndim){
+        w.mcmc = mcmc(w.proc[,i,j])
+        w.hpd[,i,j] = HPDinterval(w.mcmc,prob=w.ci)
+      }
+    }
+    
+    result = list(theta=output$theta, theta.estimate=theta.est,
+                           w=w.proc, w.estimate=w.est, 
                            sigma.w = output$sigma_w, sigma.w.estimate = sigma.w,
                            accept_theta=output$accept_theta,
-                           accept_w=output$accept_w)
+                           accept_w=output$accept_w, w.hpd=w.hpd)
 
   }
   else{
@@ -52,7 +60,7 @@ hubviz <- function(dataset, nsample=nrow(dataset), nitem=ncol(dataset), ndim = 2
    if (verbose) {
    result <- result
    } else {
-   result <- list( theta.estimate=theta.est, w.estimate=w.est, sigma.w.estimate = sigma.w )
+   result <- list( theta.estimate=theta.est, w.estimate=w.est, sigma.w.estimate = sigma.w, w.hpd=w.hpd )
    }
 
 	methods::new("hubviz",

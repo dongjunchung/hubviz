@@ -99,3 +99,62 @@ setMethod(
 
   }
 )
+
+
+setGeneric(name="hpdplot",
+           def=function(object, xlim=NA, ylim=NA)
+           {
+             standardGeneric("hpdplot")
+           }
+)
+
+
+setMethod(
+  f="hpdplot",
+  signature=c("hubviz"),
+  definition=function( object, xlim=NA, ylim=NA ) {
+    
+    # extract objects
+    colname <- colnames(object@data)
+    ndim <- object@init$ndim
+    
+    position <- as.data.frame(object@result$w.estimate)
+    rownames(position) <- colname
+    colnames(position) <- paste("position",1:ndim,sep="")
+    
+    if (any(is.na(xlim))) {
+      x1 <- -max(abs(position[,1]))-2
+      x2 <- max(abs(position[,1]))+2
+    } else {
+      x1 <- xlim[1]
+      x2 <- xlim[2]
+    }
+    if (any(is.na(ylim))) {
+      y1 <- -max(abs(position[,2]))-2
+      y2 <- max(abs(position[,2]))+2  
+    } else {
+      y1 <- ylim[1]
+      y2 <- ylim[2]
+    }
+    
+    
+    range <- object@result$w.hpd
+    
+    x.min <- apply(abs(t(range[,,1])-position[,1]),1,min)
+    y.min <- apply(abs(t(range[,,2])-position[,2]),1,min)
+    min.radius <- apply(cbind(x.min,y.min),1,min)
+    
+    position <- cbind(position,radius=min.radius)
+    
+    ggplot(position, aes(x = position1, y = position2)) + 
+      xlim(x1,x2) + ylim(y1,y2) +
+      geom_point(aes(size = radius*2), alpha = 0.5,color='darkblue') +
+      theme(legend.title=element_blank())+
+      scale_size(range = c(0.5, 12))+
+    geom_text_repel(aes(y = position2 + 0.25), label=rownames(position), segment.color = "grey50")    
+    
+    
+    
+  }
+)
+

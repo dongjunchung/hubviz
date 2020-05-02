@@ -34,4 +34,4 @@ install_github("dongjunchung/hubviz")
 
 References
 ==========
-Nam JH, Yun J, Jin IH and Chung D (2019) ''hubViz: A novel tool for hub-centric visualization''.
+Nam JH, Yun J, Jin IH and Chung D (2020) ''hubViz: A novel tool for hub-centric visualization''.

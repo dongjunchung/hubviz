@@ -37,6 +37,9 @@ Objects can be created by calls of the form \code{new("hubviz", ...)}.
     \item{plot}{\code{signature(x = "hubviz", y=missing)}: 
     provide hub-centric visualization}
 
+    \item{hpdplot}{\code{signature(object = "hubviz")}: 
+		provide HPD plot for latent posisions.}
+
 }}
 
 \details{
@@ -44,7 +47,7 @@ Objects can be created by calls of the form \code{new("hubviz", ...)}.
 }
 
 \references{
-Jin IH, Nam JH and Chung D (2019) ''hubViz: A novel tool for hub-centric visualization''.
+Nam JH, Yun J, Jin IH and Chung D (2020) ''hubViz: A novel tool for hub-centric visualization''.
 }
 
 \author{ Jin Hyun Nam, Ick Hoon Jin }
@@ -72,6 +75,8 @@ fit
 estimate( fit )
 
 plot( fit )
+
+hpdplot( fit )
 }
 
 \keyword{classes}

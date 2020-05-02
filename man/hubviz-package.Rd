@@ -32,7 +32,7 @@ Maintainer: Dongjun Chung <chungd@musc.edu>
 }
 
 \references{
-Jin IH, Nam JH and Chung D (2019) ''hubViz: A novel tool for hub-centric visualization''.
+Nam JH, Yun J, Jin IH and Chung D (2020) ''hubViz: A novel tool for hub-centric visualization''.
 }
 
 \keyword{ package }
@@ -43,7 +43,7 @@ Jin IH, Nam JH and Chung D (2019) ''hubViz: A novel tool for hub-centric visuali
 
 
 \examples{
-library(palmer)
+library(hubviz)
 
 # Data generation
 n <- 100
@@ -65,4 +65,7 @@ estimate( fit )
 
 # Hub-centric plot
 plot( fit )
+
+# HPD plot
+hpdplot( fit )
 }

@@ -13,7 +13,7 @@ hubviz(dataset, nsample = nrow(dataset), nitem = ncol(dataset),
   ndim = 2, niter = 30000, nburn = 5000, nthin = 5, nprint = 100,
   jump_theta = 1, jump_w = 0.2, pr_mean_theta = 0,
   pr_sd_theta = 10, pr_mean_w = 0, prior_a = 0.001,
-  prior_b = 0.001, option = FALSE, verbose = FALSE, cores = 1)
+  prior_b = 0.001, w.ci=0.5, option = FALSE, verbose = FALSE, cores = 1)
 }
 
 \arguments{
@@ -43,9 +43,11 @@ hubviz(dataset, nsample = nrow(dataset), nitem = ncol(dataset),
 
 \item{pr_mean_w}{Prior mean for latent space (default: 0.0)}
 
-\item{prior_a}{Prior Shape parameter for variance of latent space (default: 0.001)}
+\item{prior_a}{Prior shape parameter for variance of latent space (default: 0.001)}
 
-\item{prior_b}{Prior Scale parameter for variance of latent space (default: 0.001)}
+\item{prior_b}{Prior scale parameter for variance of latent space (default: 0.001)}
+
+\item{w.ci}{Create highest posterior density (HPD) intervals for latent positions in an MCMC (default: 0.5)}
 
 \item{option}{Logical. If TRUE then print MCMC iteration (default: FALSE)}
 
@@ -63,7 +65,7 @@ Construct \code{hubviz} class object.
 }
 
 \references{
-Nam JH, Yun J, Jin IH and Chung D (2019) ''hubViz: A novel tool for hub-centric visualization''.
+Nam JH, Yun J, Jin IH and Chung D (2020) ''hubViz: A novel tool for hub-centric visualization''.
 }
 
 \author{ Jin Hyun Nam, Ick Hoon Jin }
@@ -90,4 +92,7 @@ estimate( fit )
 
 # Hub-centric plot
 plot( fit )
+
+# HPD plot
+hpdplot( fit )
 }
